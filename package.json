@@ -1,0 +1,37 @@
+{
+  "name": "grimoire-landing-page",
+  "version": "1.0.0",
+  "description": "A landing page for grimoire.app during initial development",
+  "main": "index.js",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loferris/grimoire-landing-page.git"
+  },
+  "keywords": [
+    "grimoire"
+  ],
+  "author": "Lo Ferris",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/loferris/grimoire-landing-page/issues"
+  },
+  "homepage": "https://github.com/loferris/grimoire-landing-page#readme",
+  "dependencies": {
+    "core-js": "^3.3.2",
+    "gatsby": "^2.16.5",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "typescript": "^3.6.4"
+  },
+  "devDependencies": {
+    "prettier": "*"
+  }
+}
