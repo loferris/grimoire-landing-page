@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{204:function(e,i,o){"use strict";o.r(i);var a=o(1),n=(o(0),o(203)),c=o(202);i.default=function(){return Object(a.c)(c.a,null,Object(a.c)(n.a,{headerText:"about grimoire"}),Object(a.c)("p",null,'a "grimoire" refers to a book of spells and sources of magical knowledge. consider this digital grimoire to be a tool with which you can create a mindful and meaningful social media experience.'))}}}]);
+//# sourceMappingURL=component---src-pages-about-js-c6141c07c6d44cb8670e.js.map

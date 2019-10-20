@@ -1,9 +1,10 @@
 import React from "react"
 import Header from "../components/header"
+import Layout from '../components/layout'
 
 export default () => (
-  <div style={{ color: `teal` }}>
-    <Header headerText="About Gatsby" />
-    <p>Such wow. Very React.</p>
-  </div>
+  <Layout>
+    <Header headerText="about grimoire" />
+    <p>a "grimoire" refers to a book of spells and sources of magical knowledge. consider this digital grimoire to be a tool with which you can create a mindful and meaningful social media experience.</p>
+  </Layout>
 )

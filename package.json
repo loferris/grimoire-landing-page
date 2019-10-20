@@ -10,6 +10,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy:github": "npm run build && node ./scripts/deploy-github",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "repository": {
@@ -26,8 +27,11 @@
   },
   "homepage": "https://github.com/loferris/grimoire-landing-page#readme",
   "dependencies": {
+    "@emotion/core": "^10.0.21",
+    "@emotion/styled": "^10.0.17",
     "core-js": "^3.3.2",
     "gatsby": "^2.16.5",
+    "gatsby-plugin-emotion": "^4.1.12",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "typescript": "^3.6.4"

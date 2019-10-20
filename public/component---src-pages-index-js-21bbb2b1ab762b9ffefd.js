@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{190:function(n,o,e){"use strict";e.r(o);var t=e(0),i=e.n(t);o.default=function(){return i.a.createElement("div",null,"Goodnight moon!")}}}]);
+//# sourceMappingURL=component---src-pages-index-js-21bbb2b1ab762b9ffefd.js.map
