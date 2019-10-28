@@ -2,6 +2,7 @@ import React from "react"
 import { css } from "@emotion/core"
 import { Link } from "gatsby"
 import { rhythm } from "../utils/typography"
+import { Background } from 'react-imgix';
 
 export default ({ children }) => (
   <div
@@ -15,16 +16,22 @@ export default ({ children }) => (
     `}
   >
     <Link to={`/`}>
+      <Background
+        src='http://grimoire.imgix.net/lupines-jenner.jpeg'
+        imgixParams={{ auto: 'enhance', sat: 50, con: 25, fit: 'crop', crop: 'focalpoint' }}
+      >
       <h3
         css={css`
           margin-bottom: ${rhythm(2)};
           display: inline-block;
-          font-style: normal;
-          color: purple;
+          font-style: bold;
+          color: white;
+          background-color: red;
         `}
       >
         grimoire
       </h3>
+      </Background>
     </Link>
     <Link
       to={`/about/`}
