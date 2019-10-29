@@ -5,6 +5,6 @@ import Layout from '../components/layout'
 export default () => (
   <Layout>
     <Header headerText="about grimoire" />
-    <p>a "grimoire" refers to a book of spells and sources of magical knowledge. consider this digital grimoire to be a tool with which you can create a mindful and meaningful social media experience.</p>
+    <p>a "grimoire" refers to a book of spells and sources of magical knowledge. consider this a digital grimoire: use it to create a mindful and meaningful social media experience.</p>
   </Layout>
 )

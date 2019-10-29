@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import Layout from "../components/layout";
-//import Canvas from "../components/canvas";
-//import CustomImageEditor from "../components/CustomImageEditor";
-//import Editor from '../components/editor';
-import Imgix, { buildURL } from "react-imgix";
+import Imgix from "react-imgix";
 
 export default class App extends Component { 
   state = {
