@@ -3,12 +3,25 @@ import Layout from "../components/layout";
 //import Canvas from "../components/canvas";
 //import CustomImageEditor from "../components/CustomImageEditor";
 //import Editor from '../components/editor';
-import Imgix from "react-imgix";
+import Imgix, { buildURL } from "react-imgix";
 
 export default class App extends Component { 
   state = {
-    src: 'https://grimoire.imgix.net/lupines-jenner.jpeg?txt=the%20coast&txt-color=white&txt-size=300&txt-align=bottom%2Ccenter&w=600&txt-font=monospace',
-    imgixParams: { auto: 'enhance', fit: 'crop' }
+    src: `https://grimoire.imgix.net/lupines-jenner.jpeg?txt-color=white&txt-size=300&txt-align=bottom%2Ccenter&w=600&txt-font=monospace`,
+    imgixParams: { auto: 'enhance', fit: 'crop'}
+  }
+
+  setCaption = e => {
+    const value = e.target.value
+    const valueURL = input => {
+      const regex = /(\s)+/g
+      input = input.replace(regex, '%20');
+      return input;
+    }
+   let newValue = `${this.state.src}&txt=${valueURL(value)}`
+   this.setState({
+     src: newValue
+   })
   }
 
   handleClickVibrant = e => {
@@ -35,6 +48,11 @@ export default class App extends Component {
       src={this.state.src}
       imgixParams={this.state.imgixParams}
     />
+    <form>
+        <label>name this image
+        <input type='text' name='caption' onChange={this.setCaption} />
+        </label>
+      </form>
     <button onClick={this.handleClickOriginal}>original</button>
     <button onClick={this.handleClickVibrant}>vibrant</button>
     <button onClick={this.handleClickClassic}>classic</button>
