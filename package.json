@@ -35,7 +35,7 @@
     "draft-js": "^0.11.1",
     "draft-js-image-plugin": "^2.0.7",
     "draft-js-plugins-editor": "^3.0.0",
-    "gatsby": "^2.16.5",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-emotion": "^4.1.12",
     "gatsby-plugin-typography": "^2.3.14",
     "immutable": "^4.0.0-rc.12",
